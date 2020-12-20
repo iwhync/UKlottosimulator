@@ -38,6 +38,9 @@ while z == True:
         print("Well done.")
         input("Press enter to close.")
         break
+    if playernum[0:4] == comnum[0:4]: # added to keep it from doing nothing, also quite interesting to see how often 5 numbers is possible in comparasion to 6. 
+        print(f"5 number match at draw {start}")
+        comnum.clear()
     else:
         comnum.clear()
         z == True

@@ -97,17 +97,16 @@ while z == True:
         
         break
         
+    elif playernum[0:4] == comnum[0:4] and playernum in combon:
+        print(f"Five numbers and bonus ball drawn at {start}! Average £1,000,000 prize.")
+        start = start + 1
+        bonus.append("b")
+        comnum.clear()
     elif playernum[0:4] == comnum[0:4]:
-        if playernum in combon:
-            print(f"Five numbers and bonus ball drawn at {start}! Average £1,000,000 prize.")
-            start = start + 1
-            bonus.append("b")
-            comnum.clear
-        else:
-            five.append("5")
-            print(f"Five numbers drawn at {start}. Average £1750 prize.")
-            start = start + 1
-            comnum.clear()
+        five.append("5")
+        print(f"Five numbers drawn at {start}. Average £1750 prize.")
+        start = start + 1
+        comnum.clear()
     elif playernum[0:3] == comnum[0:3]:
         four.append("4")
         start = start + 1

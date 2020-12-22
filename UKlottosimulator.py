@@ -42,7 +42,6 @@ while z == True:
                 c = random.randint(1,59)
                 if c not in comnum:
                     combon.append(c)
-                    print(combon)
                 else:
                     pass
     if playernum == comnum:

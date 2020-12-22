@@ -46,6 +46,7 @@ while z == True:
                     pass
     if playernum == comnum:
         z == False
+        print("\n")
         print("Winner.")
         print("Player numbers were")
         playernum = ' '.join(str(v) for v in playernum)
@@ -67,6 +68,19 @@ while z == True:
         four = len(four)
         five = len(five)
         bonus = len(bonus)
+        
+        bonusprize = bonus * 1000000
+        fiveprize = five * 1750
+        fourprize = four * 140
+        threeprize = three * 30
+        
+        prizes = bonusprize + fiveprize + fourprize + threeprize + 5000000
+        everything = prizes - cost
+        
+        print(f"Total prizes are £{prizes}")
+        print(f"Including the jackpot this leaves you with a balance of £{everything}")
+        print("\n")
+        
         
         print(f"None or One numbers matched {none} times")
         print(f"Two numbers matched {two} times")
@@ -106,8 +120,7 @@ while z == True:
                 start = start + 1
                 comnum.clear()
                 combon.clear()
-        else: 
-            print(f"Five numbers drawn at {start}, Average £1750 prize.")
+        else:
             start = start + 1
             five.append("5")
             comnum.clear()

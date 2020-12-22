@@ -48,6 +48,7 @@ while z == True:
         z == False
         print("Winner.")
         print("Player numbers were")
+        playernum = ' '.join(str(v) for v in playernum)
         print(playernum)
         print("\n")
         print(f"Tries taken {start}")

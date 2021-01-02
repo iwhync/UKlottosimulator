@@ -7,3 +7,4 @@ Numbers will then be drawn over and over until both your numbers, and the drawn 
 You will then be informed of how many attempts this had taken, and the accumulative cost
 Expect this to take a while. Probably like, 10 minutes? Unless you're very lucky!!
 Well - in practice I find it takes around 10 minutes, however, given it is random, or as random as sudo random can be, while statistically unlikely it could run forever without matching all numbers.
+As if you needed any more proof that playing the lottery is a total waste of money. Run it for youself and marvel in the millions upon millions of pounds you'll be losing, over and over again.

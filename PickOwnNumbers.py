@@ -1,8 +1,7 @@
 import random
 
 print("Realistic Lottery Simulator!")
-print("You will be assigned 6 random numbers between 1 - 59.")
-print("These will remain static.")
+print("You need to choose 6 numbers between 1 - 59. These will remain static.")
 print("Numbers will then be drawn over and over until both your numbers, and the drawn numbers are an exact match")
 print("You will then be informed of how many attempts this had taken, and how much money you wasted.")
 print("Expect this to take a while.\n")
@@ -141,16 +140,9 @@ while z == True:
         
         break
         
-    if playernum[0] in comnum:
-        win.append("x")
-    if playernum[1] in comnum:
-        win.append("x")
-    if playernum[2] in comnum:
-        win.append("x")
-    if playernum[3] in comnum:
-        win.append("x")
-    if playernum[4] in comnum:
-        win.append("x")
+    for num in playernum:
+        if num in comnum:
+            win.append("x")
         
     for num in playernum:
         if num in combon:
@@ -190,7 +182,7 @@ while z == True:
         
     if len(win) == 5:
         if len(bon) == 1:
-            print(f"5 numbers and bonus ball matched at draw number {start}. Numbers drawn were {comnum}.")
+            print(f"5 numbers and bonus ball matched at draw number {start}. Numbers drawn were {comnum} and bonus {combon}")
             start = start + 1
             comnum.clear()
             combon.clear()

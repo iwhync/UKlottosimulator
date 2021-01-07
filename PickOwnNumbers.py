@@ -150,7 +150,7 @@ while z == True:
         
         percentage = (bonus / start) * 100
         print(f"Five numbers and bonus ball matched {percentage}% of the time")
-        input = ("\n Press enter to close!")
+        input("\n Press enter to close!")
         
         break
         

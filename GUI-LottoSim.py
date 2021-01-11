@@ -465,7 +465,7 @@ It's the same for 5 balls too, BUT as this is a "rare" happening, we're giving t
 
                 if len(win) == 5:
                     if len(bon) == 1: # if 5 numbers drawn AND bonus ball a different message is displayed
-                        editArea.insert(tk.INSERT,f"5 numbers and bonus ball matched at draw number {start}. Numbers drawn were {comnum[0],comnum[1],comnum[2],comnum[3],comnum[4]} and Bonus {combon[0]}")
+                        editArea.insert(tk.INSERT,f"5 numbers and bonus ball matched at draw number {start}. Numbers drawn were {comnum[0],comnum[1],comnum[2],comnum[3],comnum[4],comnum[5]} and Bonus {combon[0]}")
                         editArea.insert(tk.INSERT,"\n") 
                         start = start + 1
                         comnum.clear()
@@ -475,7 +475,7 @@ It's the same for 5 balls too, BUT as this is a "rare" happening, we're giving t
                         bon.clear()
                         
                     else:
-                        editArea.insert(tk.INSERT,f"5 numbers matched at draw number {start}. Numbers drawn were {comnum[0],comnum[1],comnum[2],comnum[3],comnum[4]}.")
+                        editArea.insert(tk.INSERT,f"5 numbers matched at draw number {start}. Numbers drawn were {comnum[0],comnum[1],comnum[2],comnum[3],comnum[4],comnum[5]}.")
                         editArea.insert(tk.INSERT,"\n")
                         start = start + 1
                         comnum.clear()

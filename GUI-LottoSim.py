@@ -83,9 +83,9 @@ def go(): # the function when that will run from the button
                     lbl4.after(2000, lambda: lbl4.destroy() )
                     x1.delete(0,"end") # finally remove the invalid number from the GUI
 
-'''
-This is the same now for all 6 numbers, not going to comment them. Just amend as needed.
-'''
+                    '''
+                    This is the same now for all 6 numbers, not going to comment them. Just amend as needed.
+                    '''
 
             else:
                 playernum.clear()
@@ -430,9 +430,9 @@ This is the same now for all 6 numbers, not going to comment them. Just amend as
                     win.clear() # clear win list for another try
                     bon.clear() # clear bonus list for another try
 
-'''
-This is more of the same for the other outcomes, so won't comment, just amend as needed.
-'''
+                '''
+                This is more of the same for the other outcomes, so won't comment, just amend as needed.
+                '''
 
 
                 if len(win) == 2:
@@ -459,9 +459,10 @@ This is more of the same for the other outcomes, so won't comment, just amend as
                     win.clear()
                     bon.clear()
 
-'''
-It's the same for 5 balls too, BUT as this is a "rare" happening, we're giving the user a bit of info just for boredom reasons
-'''
+                '''
+                It's the same for 5 balls too, BUT as this is a "rare" happening, we're giving the user a bit of info just for boredom reasons
+                    
+                '''
 
                 if len(win) == 5:
                     if len(bon) == 1: # if 5 numbers drawn AND bonus ball a different message is displayed

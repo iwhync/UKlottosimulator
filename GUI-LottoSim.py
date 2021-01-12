@@ -42,18 +42,12 @@ def go(): # the function when that will run from the button
         
         playernum = []
     
-        p1 = x1.get() # changing all text entry into numbers
-        p1 = int(p1)
-        p2 = x2.get()
-        p2 = int(p2)
-        p3 = x3.get()
-        p3 = int(p3)
-        p4 = x4.get()
-        p4 = int(p4)
-        p5 = x5.get()
-        p5 = int(p5)
-        p6 = x6.get()
-        p6 = int(p6)
+        p1 = int(x1.get()) # changing each entry into a number
+        p2 = int(x2.get())
+        p3 = int(x3.get())
+        p4 = int(x4.get())
+        p5 = int(x5.get())
+        p6 = int(x6.get())
         
     except:
         
